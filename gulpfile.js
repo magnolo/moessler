@@ -15,7 +15,9 @@ require('laravel-elixir-livereload');
 elixir(function(mix) {
     mix
       .bower()
-      .sass('./resources/assets/sass/style.scss','public/css')
+      .sass('./resources/assets/admin/sass/main.scss','public/admin/css/app.css')
+      .sass('./resources/assets/sass/style.scss','public/css/app.css')
+      .scriptsIn('./resources/assets/admin/js', 'public/admin/js/app.js')
       .scripts(['app.js', 'home.js'], 'public/js/app.js')
       .livereload([
   			'public/js/vendor.js',

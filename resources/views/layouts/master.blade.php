@@ -11,8 +11,7 @@
   <body>
       <div class="wrapper">
       @include('layouts.header')
-      @section('slider')
-      @show
+      @yield('slider')
       <section id="content">
             <div class="content-wrap">
                 <div class="container clearfix">

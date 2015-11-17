@@ -22,11 +22,10 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "jRespond": "jrespond-bower#~0.10.0",
+    "jrespond": "git@github.com:ten1seven/jRespond.git",
     "animsition": "git@github.com:blivesta/animsition.git#~4.0.1",
     "superfish": "git@github.com:joeldbirch/superfish.git#~1.7.6",
     "components-font-awesome": "~4.4.0",
-    "slider-revolution": "git@github.com:marsanla/SliderRevolution.git#~4.3.7",
-    "tweenlite": "git@github.com:jjhan1986/TweenLite.git#~1.11.5"
+    "revolution slider": "./local_components/revolution"
   }
 }

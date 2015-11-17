@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var apiRevoSlider = $('.tp-banner').show().revolution(
             {
-                dottedOverlay:"none",
+                /*dottedOverlay:"none",
                 delay:9000,
                 startwidth:1140,
                 startheight:700,
@@ -49,10 +49,9 @@ $(document).ready(function() {
                 soloArrowRightVOffset:0,
 
                 shadow:0,
-                fullWidth:"off",
-                fullScreen:"on",
 
-                spinner:"spinner3",
+
+                ,
 
                 stopLoop:"off",
                 stopAfterLoops:-1,
@@ -73,8 +72,29 @@ $(document).ready(function() {
                 hideSliderAtLimit:0,
                 hideCaptionAtLimit:0,
                 hideAllCaptionAtLilmit:0,
-                startWithSlide:0,
-                fullScreenOffsetContainer: ".header"
+                startWithSlide:0,*/
+                fullScreenOffsetContainer: ".header",
+                fullWidth:"off",
+                fullScreen:"on",
+
+                spinner:"spinner3",
+
+                parallax:{
+                  type:'mouse'
+                },
+
+                navigation:{
+                  arrows:{
+                    enable:true
+                  },
+                  bullets:{
+                    enable:true,
+                    h_align:"center",
+                    v_align:"bottom"
+                  }
+                }
+
+
             });
 
     apiRevoSlider.bind("revolution.slide.onchange",function (e,data) {
